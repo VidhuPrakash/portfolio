@@ -236,7 +236,7 @@ export default function Hero() {
           </button>
 
           <a
-            href={personalInfo.resumeLink}
+            href={process.env.NEXT_PUBLIC_RESUME_LINK as string}
             download
             className="px-5 py-4 bg-vintage-accent text-white  font-mono font-semibold hover:bg-vintage-accent/90 transition-all duration-300 interactive-scale glow-effect relative overflow-hidden group opacity-0 animate-fade-in-up"
             style={{ animationDelay: "1.6s", animationFillMode: "forwards" }}

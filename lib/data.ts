@@ -8,8 +8,6 @@ export const personalInfo = {
   email: "vidhu0dev@gmail.com",
   phone: "+91 7559887249",
   image: "/profile-image.jpeg",
-  resumeLink:
-    "https://drive.google.com/file/d/1hwUVWgZr2IMHc5uKLlMuqGj-gs2UGsye/view?usp=sharing",
   social: {
     linkedin: "https://linkedin.com/in/fullstackdev-vidhuprakashtp",
     github: "https://github.com/VidhuPrakash",
