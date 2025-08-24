@@ -7,7 +7,7 @@ export const personalInfo = {
   location: "Kerala, India",
   email: "vidhu0dev@gmail.com",
   phone: "+91 7559887249",
-  image: "/profile-image.jpeg",
+  image: "/profile-image.jpg",
   social: {
     linkedin: "https://linkedin.com/in/fullstackdev-vidhuprakashtp",
     github: "https://github.com/VidhuPrakash",

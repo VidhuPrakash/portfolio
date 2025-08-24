@@ -21,9 +21,21 @@
     --vintage-muted: #666666;
     --vintage-accent: #ff4757;
     --vintage-border: #222222;
+    --page-bg: radial-gradient(
+        ellipse 80% 60% at 50% 0%,
+        rgba(255, 0, 0, 0.122),
+        transparent 70%
+      ),
+      #0b0e12;
   }
 
   [data-theme="light"] {
+    --page-bg: radial-gradient(
+        ellipse 80% 60% at 50% 0%,
+        rgba(176, 141, 87, 0.16),
+        transparent 70%
+      ),
+      #f5f2ee;
     --vintage-bg: #f8f9fa;
     --vintage-card: #ffffff;
     --vintage-section: #f1f3f4;

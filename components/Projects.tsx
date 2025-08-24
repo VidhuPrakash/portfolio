@@ -173,6 +173,25 @@ export default function Projects() {
                         <span className="font-mono text-sm">Live</span>
                       </a>
                     )}
+                    {Array.isArray(project.github) &&
+                      project.github.length > 0 && (
+                        <div className="flex items-center gap-3">
+                          {project.github.map((url, i) => (
+                            <a
+                              key={url || i}
+                              href={url}
+                              target="_blank"
+                              rel="noopener noreferrer"
+                              className="flex items-center space-x-2 text-vintage-muted hover:text-vintage-accent transition-all duration-300 interactive-scale"
+                            >
+                              <Github className="w-4 h-4" />
+                              <span className="font-mono text-sm">
+                                Repo{i > 0 ? ` ${i + 1}` : ""}
+                              </span>
+                            </a>
+                          ))}
+                        </div>
+                      )}
                   </div>
                 </div>
               </div>
