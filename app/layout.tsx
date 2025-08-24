@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { JetBrains_Mono, Inter } from "next/font/google";
 import "./globals.css";
 import { ThemeProvider } from "next-themes";
-
+import { Analytics } from "@vercel/analytics/next";
 const jetbrainsMono = JetBrains_Mono({
   subsets: ["latin"],
   variable: "--font-mono",
@@ -89,6 +89,7 @@ export default function RootLayout({
         <meta name="viewport" content="width=device-width, initial-scale=1" />
       </head>
       <body>
+        <Analytics />
         <ThemeProvider defaultTheme="dark">{children}</ThemeProvider>
       </body>
     </html>
