@@ -86,7 +86,7 @@ export default function Hero() {
             onMouseEnter={() => setShowGlitch(true)}
             onMouseLeave={() => setShowGlitch(false)}
           >
-            <div className="absolute inset-0 -z-10 rounded-full before:content-[''] before:absolute before:inset-[-8px] before:rounded-full before:bg-[radial-gradient(circle,theme(colors.vintage-accent/40)_0%,transparent_60%)] before:blur-[8px] before:animate-[pulseRing_2.6s_ease-in-out_infinite]" />
+            <div className="absolute inset-0 -z-10  rounded-full before:content-[''] before:absolute before:inset-[-8px] before:rounded-full before:bg-[radial-gradient(circle,theme(colors.vintage-accent/40)_0%,transparent_60%)] before:blur-[8px] before:animate-[pulseRing_2.6s_ease-in-out_infinite]" />
 
             <Image
               src={
