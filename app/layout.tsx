@@ -49,7 +49,7 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     locale: "en_US",
-    url: "https://vidhuprakash.dev",
+    url: "https://www.vidhuprakash.dev",
     title: "Vidhu Prakash T P - Full Stack Developer",
     description:
       "Experienced Full Stack Developer creating innovative digital solutions with modern web technologies.",
@@ -71,7 +71,7 @@ export const metadata: Metadata = {
     images: ["/profile-image.png"],
   },
   alternates: {
-    canonical: "https://vidhuprakash.dev",
+    canonical: "https://www.vidhuprakash.dev",
   },
 };
 
@@ -90,7 +90,13 @@ export default function RootLayout({
       </head>
       <body>
         <Analytics />
-        <ThemeProvider defaultTheme="dark">{children}</ThemeProvider>
+        <ThemeProvider
+          defaultTheme="dark"
+          enableSystem={true}
+          disableTransitionOnChange
+        >
+          {children}
+        </ThemeProvider>
       </body>
     </html>
   );

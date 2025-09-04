@@ -5,7 +5,7 @@ export const personalInfo = {
   description:
     "Crafting digital experiences with clean code and creative design. Passionate about building innovative web applications that make a difference.",
   location: "Kerala, India",
-  email: "vidhu0dev@gmail.com",
+  email: "connect@vidhuprakash.dev",
   phone: "+91 7559887249",
   image: "/profile-image.jpg",
   social: {
@@ -30,9 +30,10 @@ export const experiences = [
     location: "Mukkam, Calicut, Kerala",
     period: "Jul 2025 - Present",
     description:
-      "Developed and maintained enterprise web applications using Next.js, Node.js, Hono.js and Drizzle ORM + PostgreSQL. deliver high-quality software solutions. got advance knowleadgue in DevOps",
+      "Developed and maintained enterprise web applications using Next.js, Node.js, Hono.js and Drizzle ORM + PostgreSQL. deliver high-quality software solutions. got advance knowleadgue in cloud using Cloudflare worker",
     achievements: [
       "Project architecture designing and implementation",
+      "Build quick MVP to demonstrate capabilities of the product to clients",
       "Increased application performance by 300%",
       "Optimized database performance by 20%",
       "Implemented real-time collaboration features",
@@ -284,7 +285,7 @@ export const skillCategories = [
     skills: [
       "Git",
       "Github",
-      "CloudeFlare",
+      "CloudeFlare worker",
       "Vercel",
       "AWS S3",
       "Docker",

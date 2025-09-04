@@ -14,8 +14,6 @@ import Image from "next/image";
 export default function Hero() {
   const [text, setText] = useState("");
   const [showGlitch, setShowGlitch] = useState(false);
-  const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
-
   useEffect(() => {
     let i = 0;
     const timer = setInterval(() => {
@@ -27,15 +25,6 @@ export default function Hero() {
     }, 100);
 
     return () => clearInterval(timer);
-  }, []);
-
-  useEffect(() => {
-    const handleMouseMove = (e: MouseEvent) => {
-      setMousePosition({ x: e.clientX, y: e.clientY });
-    };
-
-    window.addEventListener("mousemove", handleMouseMove);
-    return () => window.removeEventListener("mousemove", handleMouseMove);
   }, []);
 
   const scrollToSection = (sectionId: string) => {
@@ -77,22 +66,6 @@ export default function Hero() {
           </div>
         ))}
       </div>
-
-      <div
-        className="fixed w-6 h-6 bg-vintage-accent/30 rounded-full pointer-events-none z-50 transition-all duration-300 ease-out"
-        style={{
-          left: mousePosition.x - 12,
-          top: mousePosition.y - 12,
-          transform: "scale(0.8)",
-        }}
-      />
-      <div
-        className="fixed w-12 h-12 border border-vintage-accent/20 rounded-full pointer-events-none z-40 transition-all duration-500 ease-out"
-        style={{
-          left: mousePosition.x - 24,
-          top: mousePosition.y - 24,
-        }}
-      />
 
       <div className="max-w-4xl mx-auto text-center space-y-12 relative z-10">
         <div className="relative mx-auto w-48 h-48 mb-8">
