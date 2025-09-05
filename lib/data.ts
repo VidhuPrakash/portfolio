@@ -1,9 +1,9 @@
 export const personalInfo = {
   name: "Vidhu Prakash T P",
-  title: "Full Stack Developer",
+  title: "Software Engineer",
   subtitle: "Full Stack Developer",
   description:
-    "Crafting digital experiences with clean code and creative design. Passionate about building innovative web applications that make a difference.",
+    "Full Stack Developer specializing in building scalable, high performance web applications. Skilled in designing seamless user experiences and developing robust backend systems. Passionate about transforming ideas into innovative digital solutions with clean code and modern technologies.",
   location: "Kerala, India",
   email: "connect@vidhuprakash.dev",
   phone: "+91 7559887249",
